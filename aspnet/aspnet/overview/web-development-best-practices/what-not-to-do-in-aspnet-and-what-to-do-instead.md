@@ -1,6 +1,6 @@
 ---
 uid: aspnet/overview/web-development-best-practices/what-not-to-do-in-aspnet-and-what-to-do-instead
-title: "不執行在 ASP.NET 中，以及應該改用哪個程式 |Microsoft 文件"
+title: "在 ASP.NET 中該做與不該做的事 |Microsoft 文件"
 author: tfitzmac
 description: "本主題說明在 ASP.NET web 專案中的人員進行幾個常見的錯誤。 它提供建議您應如何避免這些 commo..."
 ms.author: aspnetcontent
@@ -18,7 +18,7 @@ ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/24/2018
 ---
-<a name="what-not-to-do-in-aspnet-and-what-to-do-instead"></a>不執行在 ASP.NET 中，以及應該改用哪個程式
+<a name="what-not-to-do-in-aspnet-and-what-to-do-instead"></a>在 ASP.NET 中該做與不該做的事
 ====================
 由[Tom FitzMacken](https://github.com/tfitzmac)
 
@@ -76,9 +76,9 @@ ms.lasthandoff: 01/24/2018
 
 ### <a name="style-properties-on-controls"></a>控制項的樣式屬性
 
-建議： 停止在控制項的標記中，設定樣式值，並改為設定在 CSS 樣式表中的格式化值。
+建議： 不要在控制項的標記中直接設定CSS樣式，改為在 CSS 樣式表中設定。
 
-Web 伺服器控制項包含數十個屬性可以用來設定的內建樣式屬性。 例如，ForeColor 屬性設定為控制項文字的色彩。 您可以完成此相同的效果更有效率地透過 CSS 樣式表。 樣式表可讓您集中樣式值，並避免設定整個應用程式中的這些值。
+Web 伺服器控制項包含數十個常用的內建樣式屬性。 例如，ForeColor 屬性設定為控制項文字的色彩。 透過 CSS 樣式表您可以比更有效率地完成相同的效果。 樣式表可讓您集中樣式值，並避免設定整個應用程式中的這些值。
 
 下列範例顯示 CSS 類別集的文字為紅色。
 
